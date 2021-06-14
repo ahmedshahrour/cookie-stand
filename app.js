@@ -118,7 +118,7 @@ let tokyo = {
 
 
 tokyo.getCustomer();
-stokyo.render();
+tokyo.render();
 
 function getRandomCustomer(min, max) {
 
@@ -246,6 +246,8 @@ function getRandomCustomer(min, max) {
 }
 
 //lima
+
+
 
 
 let lima = {
