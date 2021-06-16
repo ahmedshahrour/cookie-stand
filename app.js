@@ -115,3 +115,23 @@ lima.getCustomer();
 lima.render();
 
 getFooter();
+
+function formSubmission(event) {
+    event.preventDefault();
+    let name = event.target.name.value;
+    let min = event.target.min.value;
+    let max = event.target.max.value.split(',');
+    let average = event.target.average.value;
+    let cookiesPerHour = event.target.cookiesPerHour.value;
+
+
+    let newlocation = new location(name, min, max, average, cookiesPerHour, total);
+
+    newlocation.getCustomer(3, 12);
+    newlocation.render();
+  
+    console.log(newlocation);
+  }
+  
+  salesdata.addEventListener('submit', formSubmission);
+  
