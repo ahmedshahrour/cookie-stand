@@ -116,22 +116,35 @@ lima.render();
 
 getFooter();
 
+
 function formSubmission(event) {
+    console.log('call')
     event.preventDefault();
     let name = event.target.name.value;
     let min = event.target.min.value;
     let max = event.target.max.value.split(',');
     let average = event.target.average.value;
-    let cookiesPerHour = event.target.cookiesPerHour.value;
+   
 
 
-    let newlocation = new location(name, min, max, average, cookiesPerHour, total);
+    let newlocation = new SalmonCookies(name, min, max, average);
 
     newlocation.getCustomer(3, 12);
+    //remove the footer from table
+    //remove the last row from HTML table using JS.
+    deleterow('sales');
+    
     newlocation.render();
   
     console.log(newlocation);
+    getFooter();
   }
-  
+  function deleterow(tableID) {
+    var table = document.getElementById(tableID);
+    var rowCount = table.rows.length;
+
+    table.deleteRow(rowCount -1);
+}
+
   salesdata.addEventListener('submit', formSubmission);
   
