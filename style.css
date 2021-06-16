@@ -1,54 +1,106 @@
+* {
+  font-family: Verdana, Georgia, Monaco;
+  box-sizing: border-box;
+}
+body {
+  background-color: #a3218b59;
+  margin: 0 auto;
+}
+header, nav {
+display: flexbox;
+align-items: center;
+justify-content: space-between;
+flex-direction: row;
+}
 header img {
-    width: 100px;
-  }
+  width: 100px;
+  height: 100px;
+}
+
+main section:nth-child(2) p {
+  text-indent: 10px; 
+  margin-left: 50px;
+}
+article {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+section, ul {
+  list-style: inside;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section, .locations{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;   
+}
+.color {
+  display: block;
+  text-align: center;
+  margin: 30px;
+}
+.hours {
+  display: white;
+  text-align: center;
+}
+ul li {
+  padding: 5px;
+}
+h1 {
+  color: #796782;
+}
+h1 , h2, h3 {
   
-  header nav {
-    float: right;
-  }
-  
-  header nav ul li {
-    display: inline-block;
-    padding: 10px;
-  }
-  
-  img {
-    width: 100px;
-  }
-  
-  main h1 {
-    text-align: center;
-    color: rgb(125, 135, 180);
-  }
-  
-  p {
-    line-height: 1.5;
-  }
-  
-  main section:nth-child(3) p {
-    margin-bottom: 5px;
-  }
-  main section:nth-child(3) p:nth-child(1) {
-    background-color: #cee5d0;
-  }
-  
-  main section:nth-child(3) p:nth-child(2) {
-    background-color: #f3f0d7;
-  }
-  
-  main section:nth-child(3) p:nth-child(3) {
-    background-color: #d8b384;
-  }
-  
-  main section:nth-child(3) p:nth-child(4) {
-    background-color: #5e454b;
-  }
-  
-  h1 {
-    font-size: 100px;
-    font-weight: 700;
-  }
-  
-  main section:nth-child(2) p {
-    text-indent: 10px; 
-    margin-left: 50px;
-  }
+  font-weight: bold;
+  margin: 15px;
+  font-size: 32px;
+  font-family: 'Arial', cursive;
+}
+table {
+  width: 30%;
+  margin: 20px;
+  vertical-align: center;
+}
+table, th, td {
+  border: 2px  rgb(121, 37, 37);
+  margin: 10px;
+  font-size: 20px;
+  font-style: italic;
+  padding: 10px;
+  background-color: #a68aae59;
+  font-size: 18px;
+}
+td, th {
+  padding: 5px;
+}
+th {
+  text-align: center;
+}
+.hours {
+  margin: 10px;
+}
+p {
+  padding: 10px;
+  margin: 10px;
+}
+a {
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  font-weight: bold;
+}
+a:hover {
+  color: rgb(135 51 171);
+}
+
+h1 {
+  font-size: 100px;
+  font-weight: 700;
+}
+
